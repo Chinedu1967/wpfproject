@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp2.pizza"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="pizza" Height="450" Width="800">
+    <Grid Background="#FFF17B7B" Margin="0,-24,-8,0" Height="443" VerticalAlignment="Bottom">
+        <Image x:Name="logo" HorizontalAlignment="Left" Height="146" VerticalAlignment="Top" Width="134" Source="https://image.shutterstock.com/image-vector/pizza-cafe-logo-icon-emblem-260nw-1041333244.jpg" Margin="0,5,0,0"/>
+        <TextBox x:Name="nameTXT" HorizontalAlignment="Left" Height="42" Margin="187,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" RenderTransformOrigin="0.5,0.5" Text="ACOVIN GLOBAL EXPRESS PIZZA" FontStyle="Italic" FontWeight="Black" FontStretch="ExtraExpanded" FontFamily="Segoe Script" FontSize="20">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.254"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <RadioButton x:Name="small" Content="Small" HorizontalAlignment="Left" Margin="230,103,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="midium" Content="Midium" HorizontalAlignment="Left" Margin="314,103,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="large" Content="Large" HorizontalAlignment="Left" Margin="444,103,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="xtralarge" Content="Extra large" HorizontalAlignment="Left" Margin="588,103,0,0" VerticalAlignment="Top"/>
+        <GroupBox x:Name="VgtBx" Header="Vegitables / Meat" HorizontalAlignment="Left" Height="200" Margin="0,151,0,0" VerticalAlignment="Top" Width="290" BorderBrush="#FFDEDE61">
+            <CheckBox x:Name="grenpeperChk" Content="Gren Peper" HorizontalAlignment="Left" Margin="177,84,0,0" VerticalAlignment="Top" Checked="grenpeperChk_Checked"/>
+        </GroupBox>
+        <Button x:Name="submitBtn" Content="Submit" HorizontalAlignment="Left" Margin="350,354,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="submitBtn_Click"/>
+        <CheckBox x:Name="tomatoChk" Content="Tomato" HorizontalAlignment="Left" Margin="14,176,0,0" VerticalAlignment="Top" Checked="tomatoChk_Checked"/>
+        <CheckBox x:Name="spinachChk" Content="Spinach" HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Checked="spinachChk_Checked"/>
+        <CheckBox x:Name="pinapleChk" Content="Pinaple" HorizontalAlignment="Left" Margin="183,179,0,0" VerticalAlignment="Top" Checked="pinapleChk_Checked"/>
+        <CheckBox x:Name="broccolliChk" Content="Broccolli" HorizontalAlignment="Left" Margin="14,213,0,0" VerticalAlignment="Top" Checked="broccolliChk_Checked"/>
+        <CheckBox x:Name="redpeperChk" Content="Red peper" HorizontalAlignment="Left" Margin="3,324,0,0" VerticalAlignment="Top" Checked="redpeperChk_Checked_1"/>
+        <CheckBox x:Name="onionChk" Content="Onion" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Checked="onionChk_Checked"/>
+        <CheckBox x:Name="mushroomChk" Content="Mushroom" HorizontalAlignment="Left" Margin="183,216,0,0" VerticalAlignment="Top" Checked="mushroomChk_Checked"/>
+        <CheckBox x:Name="beefChk" Content="Beef" HorizontalAlignment="Left" Margin="183,324,0,0" VerticalAlignment="Top" Checked="beefChk_Checked"/>
+        <CheckBox x:Name="chickenChk" Content="Chicken" HorizontalAlignment="Left" Margin="183,290,0,0" VerticalAlignment="Top" Checked="chickenChk_Checked"/>
+        <Label x:Name="welcome" Content="" HorizontalAlignment="Left" Margin="588,41,0,0" VerticalAlignment="Top" Height="40" Width="179" Background="#FFDCEAE8"/>
+    </Grid>
+</Window>
